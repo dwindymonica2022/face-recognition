@@ -10,20 +10,20 @@ import numpy as np
 
 vid = cv2.VideoCapture(0)
 
-rahel_image = face_recognition.load_image_file("rahelll.png")
-rahel_encoding = face_recognition.face_encodings(rahel_image)[0]
+natasha_image = face_recognition.load_image_file("natasha.jpg")
+natasha_encoding = face_recognition.face_encodings(natasha_image)[0]
 
-raisa_image = face_recognition.load_image_file("raisa.jpg")
-raisa_encoding = face_recognition.face_encodings(raisa_image)[0]
+tiara_image = face_recognition.load_image_file("tiara.jpeg")
+tiara_encoding = face_recognition.face_encodings(tiara_image)[0]
 
 known_face_encodings = [
-    rahel_encoding,
-    raisa_encoding
+    natasha_encoding,
+    tiara_encoding
 ]
 
 known_face_names = [
-    "rahel",
-    "raisa"
+    "natasha",
+    "tiara"
 ]
 
 face_locations = []
